@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint --ignore-path .gitignore \"./packages/**/*.{ts,tsx,js,jsx}\"",
     "format": "prettier --ignore-path .gitignore --write \"{*,**/*}.{ts,tsx,js,jsx,json,md,sol}\"",
-    "prepare": "husky install || true"
+    "prepare": "git rev-parse --git-dir > /dev/null 2>&1 && husky install || true"
   },
   "repository": {
     "type": "git",
